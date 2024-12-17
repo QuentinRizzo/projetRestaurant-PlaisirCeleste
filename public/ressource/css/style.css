@@ -1,0 +1,345 @@
+/* Police d'écriture */
+@import url('https://fonts.googleapis.com/css2?family=Cagliostro&family=Paytone+One&family=Peralta&display=swap');
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Début  Header */
+
+/* Début BarNav */
+.logo-barnav {
+  width: 50%;
+  position: relative;
+  top: 3px;
+}
+
+/* Modal Connexion et Inscription */
+.feuille-contact {
+  width: 100% !important;
+  border: 2px solid #c5a154d7;
+  border-radius: 10px !important;
+  background-color: #25292d !important;
+  color: white !important;
+  box-shadow: 0px 0px 22px black !important;
+  margin-bottom: 40px;
+}
+
+.bg-modal{
+  background: none !important;
+  border: none !important;
+}
+/* Modal Connexion et Inscription */
+
+/* Début Menu DropDown Profil */
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80px;
+}
+
+.nav-item {
+  margin-left: 15px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+}
+/* Fin Menu DropDown Profil */
+
+
+/* Fin  BarNav */
+
+/* =============================================== */
+/* Slider */
+.contenaire-slide {
+  border-top: 3px solid #C5A154;
+  background: rgb(77, 77, 77);
+}
+
+.slide {
+  position: relative;
+  height: 750px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  filter: blur(20px);
+}
+
+.slide.active {
+  display: flex;
+}
+
+.box-img-slide {
+  position: relative;
+  border: 3px solid #C5A154;
+  border-radius: 9px;
+  box-shadow: 0px 4px 4px 0px #C5A154; 
+}
+
+.img-slider {
+  height: 100%;
+  width: 100%;
+  border-radius: 9px;
+}
+
+
+.desc-slide {
+  position: relative;
+  top: 4px;
+  left: -5%;
+  background: rgba(0, 0, 0, 0.5);
+  border: 3px solid #C5A154;
+  height: 350px;
+  width: 450px;
+  color: white;
+  padding: 15px;
+  border-radius: 9px;
+  box-shadow: 0px 4px 4px 0px #C5A154; 
+}
+.btn-voir-detail{
+  position: relative;
+  text-align: center;
+  top: 234px;
+  left: -20%;
+  background: rgba(0, 0, 0, 0.5);
+  border: 3px solid #C5A154;
+  width: 172px;
+  height: 46.78px;
+  color: white;
+  padding: 11px;
+  border-radius: 9px;
+  box-shadow: 0px 4px 4px 0px #C5A154;
+  list-style: none;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.btn-voir-detail:hover{
+  background-color: inherit;
+}
+.cont-but {
+  color: #C5A154;
+  display: flex;
+  justify-content: space-between;
+  font-size: 100px;
+  cursor: pointer;
+  position: relative;
+  top: -454px;
+}
+
+/* Fin Slider */
+
+/* Fin Header */
+
+/* ========================================== */
+/* Styles pour rendre les images réactives */
+.img-fluid {
+  max-width: 100%; /* L'image ne dépassera pas la largeur du conteneur parent */
+  height: auto; /* Hauteur proportionnelle à la largeur */
+}
+
+/* Rendre la section 1 flexible et adaptative */
+.bg-card-section1 {
+  background: url(../img/background-section-une.webp) center/cover;
+  box-shadow: 4px 5px 43px 11px #000, 0px 4px 4px 0px #C5A154 inset !important;
+  border-radius: 10px !important;
+}
+
+/* Rendre la boîte de texte de la section 1 flexible et adaptative */
+.bg-card-box-text {
+  background: rgba(0, 0, 0, 0.5);
+  border: 3px solid #C5A154;
+  box-shadow: 4px 5px 43px 11px #000, 0px 4px 4px 0px #C5A154 inset !important;
+  border-radius: 9px;
+  margin: 20px; /* Ajuster la marge selon vos besoins */
+}
+
+/* Rendre la ligne du titre flexible et adaptative */
+.line-title {
+  border-bottom: 2px solid #C5A154;
+  width: 60%; /* Ajuster la largeur selon vos besoins */
+  margin: auto;
+}
+
+/* Début Présentation du restaurant */
+.box-detailtext {
+  border: 3px solid #C5A154;
+  filter: blur(60%);
+  box-shadow: 4px 5px 43px 11px #000, 0px 4px 4px 0px #C5A154 inset !important;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.image-card-equipe{
+  border: 3px solid #C5A154;
+  border-radius: 10px;
+  box-shadow: 4px 5px 43px 11px #000, 0px 4px 4px 0px #C5A154 inset !important;
+}
+/* Fin Présentation du restaurant */
+.mx-3 {
+  margin-left: 0!important;
+}
+/*  Fin de la première section */
+
+/* Début Section  Carte du Repas  */
+.bg-presentation-carte{
+  width: 70% !important;
+  box-shadow: 4px 5px 43px 11px #000, 0px 4px 4px 0px #C5A154 inset !important;
+  background: url(../img/bg-reliefe.jpg) center/cover !important;
+}
+.line {
+  border-bottom: 2px solid #C5A154;
+}
+.card {
+  border-radius: 9px;
+  background: rgba(29, 29, 29, 0.70);
+  box-shadow: 0px 4px 4px 0px #C5A154;
+  border-top: 2px solid #C5A154;
+}
+.titre-categ{
+  margin-top: 60px !important;
+}
+
+/* Fin Section Carte du Repas */
+
+
+/* Début Page Contact */
+.row-oval{
+  border-radius: 9px;
+}
+.box-contact {
+  border: 2px solid #C5A154;
+  border-radius: 9px;
+  box-shadow: 4px 5px 43px 11px #000, 0px 4px 4px 0px #C5A154 inset !important;
+}
+
+.background-formulaire {
+  border-radius: 9px;
+  border-right: 3px solid #C5A154;
+}
+
+.img-contact {
+  margin-top: 180px;
+  margin-left: 170px !important;
+}
+
+.formulaire-box-bg {
+  border-radius: 9px;
+}
+
+/* Fin Page Contact */
+
+/* Début Back Office */
+.img-prod-BackOffice{
+  width: 60px;
+}
+.img-affiche-menu{
+  width: 400px !important;
+  height: 400px !important;
+}
+
+/* Fin Back Office */
+
+
+/* Début Footer */
+.line-footer{
+  color: #C5A154 !important;
+}
+.btn-footer{
+  border: 1px solid #C5A154;
+  border-radius: 5px;
+  width: 30%;
+  height: 46%;
+  background-color: #00000069;
+  color: white;
+}
+.btn-footer:hover{
+  background-color: inherit;
+  border: 1px solid #c5a154bb;
+}
+/* Fin Footer */
+
+
+/* ================================================ */
+
+/* Début du responsive  */
+@media (max-width: 962px) {
+    /* Début NavBar */
+    .box-icon-nav {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+  }
+
+  .navbar-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+      padding: 0 !important;
+  }
+
+  .nav-item {
+      text-align: center;
+      margin: 0 !important;
+  }
+
+  .nav-link {
+      text-align: center;
+      margin: 5px !important;
+  }
+  .logo-barnav{
+    position: relative;
+    left: 166px;
+    top: 53px;
+  }
+  .btn-bg {
+    position: relative !important;
+    right: 25px !important
+}
+  /* Fin navBar */
+/* ====================== */
+
+/* Début Slider */
+.contenaire-slide{
+  display: none;
+}
+/* Fin Slider */
+
+/* ====================== */
+
+/* Début page contact */
+.background-formulaire{
+  display: none;
+}
+/* Fin page contact */
+
+
+/* ====================== */
+
+/* Debut footer */
+.cont-footer {
+  text-align: center;
+}
+
+/* Fin footer */
+}
+/* Fin du responsive */
